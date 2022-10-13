@@ -14,9 +14,14 @@ setup(
         "seaborn",
         "transformers",
         "datasets",
+        "typer",
+        "rich"
     ],
-    # entry_points={"elinker": ["elinker = elinker.cli"]},
-    extras_require={
+    entry_points={
+        "console_scripts": [
+            "elinker=elinker.cli:app",
+        ],
+    },    extras_require={
         "interactive": ["jupyterlab"],
         "dev": ["black", "pyment", "twine", "tox", "bumpversion", "flake8"],
         "test": ["pytest"],
