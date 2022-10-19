@@ -49,3 +49,7 @@ def med_mentions(file_path: Path) -> Tuple[pd.DataFrame, pd.DataFrame]:
     return pd.DataFrame(
         {"pmid": pmids, "title": titles, "abstract": abstracts}
     ), pd.DataFrame(mention_data)
+
+
+def umls_concepts() -> pd.DataFrame:
+    return pd.DataFrame()
