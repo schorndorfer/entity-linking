@@ -137,3 +137,4 @@ dmypy.json
 __pycache__/
 .ipynb_checkpoints/
 /data/
+**/*.sqlite3*
