@@ -138,3 +138,4 @@ __pycache__/
 .ipynb_checkpoints/
 /data/
 **/*.sqlite3*
+/scripts/
