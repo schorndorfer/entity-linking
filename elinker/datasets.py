@@ -31,12 +31,12 @@ def med_mentions(file_path: Path) -> Tuple[pd.DataFrame, pd.DataFrame]:
                 else:
                     parts = line.split("\t")
                     if len(parts) == 6:
-                        mention_data["pmid"].append(parts[0])
-                        mention_data["start_index"].append(parts[1])
-                        mention_data["end_index"].append(parts[2])
-                        mention_data["text_segment"].append(parts[3])
-                        mention_data["sem_type_id"].append(parts[4])
-                        mention_data["entity_id"].append(parts[5])
+                        mention_data["pmid"].append(parts[0].strip())
+                        mention_data["start_index"].append(parts[1].strip())
+                        mention_data["end_index"].append(parts[2].strip())
+                        mention_data["text_segment"].append(parts[3].strip())
+                        mention_data["sem_type_id"].append(parts[4].strip())
+                        mention_data["entity_id"].append(parts[5].strip())
 
     pmids = []
     titles = []
