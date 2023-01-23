@@ -139,3 +139,4 @@ __pycache__/
 /data/
 **/*.sqlite3*
 /scripts/
+models/
